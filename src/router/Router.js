@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import './App.css';
+
 // Styles
 // CoreUI Icons Set
 import '@coreui/icons/css/coreui-icons.min.css';
@@ -11,16 +11,16 @@ import 'font-awesome/css/font-awesome.min.css';
 // Import Simple Line Icons Set
 import 'simple-line-icons/css/simple-line-icons.css';
 // Import Main styles for this application
-import './scss/style.css'
+import '../scss/style.css';
 
 // Components
-import { DefaultLayout } from './components';
+import { DefaultLayout } from '../components';
 // Pages
-import { Login, Page404, Page500, Register } from './views/Pages';
+import { Login, Page404, Page500, Register } from '../views/Pages';
 
 // import { renderRoutes } from 'react-router-config';
 
-class App extends Component {
+class Router extends Component {
   render() {
     return (
       <HashRouter>
@@ -36,4 +36,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Router;

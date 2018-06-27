@@ -1,7 +1,7 @@
 import React from 'react';
-import Loadable from 'react-loadable'
+import Loadable from 'react-loadable';
 
-import DefaultLayout from './containers/DefaultLayout';
+import DefaultLayout from './components/DefaultLayout';
 
 function Loading() {
   return <div>Loading...</div>;

@@ -13,11 +13,13 @@ import {
   AppSidebarHeader,
   AppSidebarMinimizer,
   AppSidebarNav,
-} from '@coreui/react';
+} from '@coreui/react'
+;
 // sidebar nav config
 import navigation from '../../_nav';
+
 // routes config
-import routes from '../../routes';
+import routes from '../../router/routes';
 import DefaultAside from './DefaultAside';
 import DefaultFooter from './DefaultFooter';
 import DefaultHeader from './DefaultHeader';
