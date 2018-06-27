@@ -13,8 +13,8 @@ import 'simple-line-icons/css/simple-line-icons.css';
 // Import Main styles for this application
 import './scss/style.css'
 
-// Containers
-import { DefaultLayout } from './containers';
+// Components
+import { DefaultLayout } from './components';
 // Pages
 import { Login, Page404, Page500, Register } from './views/Pages';
 
