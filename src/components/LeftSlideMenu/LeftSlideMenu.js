@@ -9,7 +9,7 @@ import {
 } from '@coreui/react';
 
 // sidebar nav config
-import navigation from './navigation';
+import navigation from '../../common/navigation';
 
 class LeftSlideMenu extends Component {
   render() {

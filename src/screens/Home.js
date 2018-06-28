@@ -10,18 +10,21 @@ import {
 } from '@coreui/react';
 
 // routes config
-import routes from '../router/routes';
-import LeftSlideMenu from './LeftSlideMenu';
-import RightSlideMenu from './RightSlideMenu';
-import DefaultFooter from './DefaultFooter';
-import DefaultHeader from './DefaultHeader';
+import {
+  Header,
+  Footer,
+  RightSlideMenu,
+  LeftSlideMenu
+} from '../components';
 
-class DefaultLayout extends Component {
+import routes from '../common/routes';
+
+class Home extends Component {
   render() {
     return (
       <div className="app">
         <AppHeader fixed>
-          <DefaultHeader />
+          <Header />
         </AppHeader>
         <div className="app-body">
           <LeftSlideMenu menuProps={this.props} />
@@ -45,11 +48,11 @@ class DefaultLayout extends Component {
           </AppAside>
         </div>
         <AppFooter>
-          <DefaultFooter />
+          <Footer />
         </AppFooter>
       </div>
     );
   }
 }
 
-export default DefaultLayout;
+export default Home;

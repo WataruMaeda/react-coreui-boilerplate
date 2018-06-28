@@ -1,7 +1,6 @@
 import React from 'react';
 import Loadable from 'react-loadable';
-
-import { DefaultLayout } from '../components';
+import Home from '../screens';
 
 function Loading() {
   return <div>Loading...</div>;
@@ -186,7 +185,7 @@ const User = Loadable({
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
-  { path: '/', exact: true, name: 'Home', component: DefaultLayout },
+  { path: '/', exact: true, name: 'Home', component: Home },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
