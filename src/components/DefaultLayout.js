@@ -7,19 +7,11 @@ import {
   AppBreadcrumb,
   AppFooter,
   AppHeader,
-  AppSidebar,
-  AppSidebarFooter,
-  AppSidebarForm,
-  AppSidebarHeader,
-  AppSidebarMinimizer,
-  AppSidebarNav,
-} from '@coreui/react'
-;
-// sidebar nav config
-import navigation from '../_nav';
+} from '@coreui/react';
 
 // routes config
 import routes from '../router/routes';
+import LeftSlideMenu from './LeftSlideMenu';
 import RightSlideMenu from './RightSlideMenu';
 import DefaultFooter from './DefaultFooter';
 import DefaultHeader from './DefaultHeader';
@@ -32,13 +24,7 @@ class DefaultLayout extends Component {
           <DefaultHeader />
         </AppHeader>
         <div className="app-body">
-          <AppSidebar fixed display="lg">
-            <AppSidebarHeader />
-            <AppSidebarForm />
-            <AppSidebarNav navConfig={navigation} {...this.props} />
-            <AppSidebarFooter />
-            <AppSidebarMinimizer />
-          </AppSidebar>
+          <LeftSlideMenu menuProps={this.props} />
           <main className="main">
             <AppBreadcrumb appRoutes={routes}/>
             <Container fluid>
