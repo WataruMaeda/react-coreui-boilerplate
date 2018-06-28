@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Nav, NavItem, NavLink, Progress, TabContent, TabPane, ListGroup, ListGroupItem } from 'reactstrap';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { AppSwitch } from '@coreui/react'
+import { AppSwitch } from '@coreui/react';
 
 const propTypes = {
   children: PropTypes.node,
@@ -10,7 +10,7 @@ const propTypes = {
 
 const defaultProps = {};
 
-class DefaultAside extends Component {
+class RightSlideMenu extends Component {
 
   constructor(props) {
     super(props);
@@ -311,7 +311,7 @@ class DefaultAside extends Component {
   }
 }
 
-DefaultAside.propTypes = propTypes;
-DefaultAside.defaultProps = defaultProps;
+RightSlideMenu.propTypes = propTypes;
+RightSlideMenu.defaultProps = defaultProps;
 
-export default DefaultAside;
+export default RightSlideMenu;

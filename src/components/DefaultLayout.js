@@ -20,7 +20,7 @@ import navigation from '../_nav';
 
 // routes config
 import routes from '../router/routes';
-import DefaultAside from './DefaultAside';
+import RightSlideMenu from './RightSlideMenu';
 import DefaultFooter from './DefaultFooter';
 import DefaultHeader from './DefaultHeader';
 
@@ -55,7 +55,7 @@ class DefaultLayout extends Component {
             </Container>
           </main>
           <AppAside fixed hidden>
-            <DefaultAside />
+            <RightSlideMenu />
           </AppAside>
         </div>
         <AppFooter>
